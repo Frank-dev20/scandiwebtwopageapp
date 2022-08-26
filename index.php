@@ -11,7 +11,7 @@ include "./class/action.php";
     <div class="col-sm-4">
       <div style="float:right">
         <button class="btn btn-sm btn-success" type="submit" onclick="document.location='add.php'" style="display: inline-block; margin-right: 10px">ADD</button>
-        <form method="post" id="delete_checkbox" style="display: inline-block; margin-right: 10px">
+        <form method="post" id="delete-checkbox" style="display: inline-block; margin-right: 10px">
           <button class="btn btn-sm btn-danger" type="submit" name="but_delete">
             MASS DELETE
           </button>
