@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#type_switcher").change(function(){
+	$("#productType").change(function(){
 		var type = $(this).val();
 		switch (type) {
 			case "1":

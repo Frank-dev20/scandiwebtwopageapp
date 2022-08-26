@@ -51,7 +51,7 @@ include "class/action.php";
       <div class="form-group row">
         <label for="typeswitcher" class="col-sm-3 col-form-label">Type Switcher</label>
         <div class="col-sm-5">
-          <select class="form-control" name="type" id="type_switcher" required>
+          <select class="form-control" name="type" id="productType" required>
             <option selected value="">Type Switcher</option>
             <option value="1">1 - DVD-disc</option>
             <option value="2">2 - Book</option>
