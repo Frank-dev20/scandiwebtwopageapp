@@ -28,5 +28,6 @@ class Disc extends Product
         $size = mysqli_real_escape_string($this->connect(), $_POST['size']);
         $sql = "INSERT INTO product (SKU, name, price, img, type, size) VALUES ('$sku','$name','$price','$img', '$type', '$size')";
         mysqli_query($this->connect(), $sql);
+        header("Location:index.php");
     }
 }

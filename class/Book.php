@@ -28,5 +28,6 @@ class Book extends Product
         }
         $sql = "INSERT INTO product (SKU, name, price, img, type, weight) VALUES ('$sku','$name','$price','$img', '$type', '$weight')";
         mysqli_query($this->connect(), $sql);
+        header("Location:index.php");
     }
 }

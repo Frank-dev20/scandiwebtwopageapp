@@ -32,5 +32,6 @@ class Furniture extends Product
         }
         $sql = "INSERT INTO product (SKU, name, price, img, type, height, width, length) VALUES ('$sku','$name','$price','$img', '$type', '$height', '$width', '$length')";
         mysqli_query($this->connect(), $sql);
+        header("Location:index.php");
     }
 }
