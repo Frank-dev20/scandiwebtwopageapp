@@ -20,23 +20,23 @@ include "class/action.php";
 <div class="container">
 
   <div class="col-8 my-3">
-    <form id="add_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
+    <form id="product_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
       <div class="form-group row">
-        <label for="sku" class="col-sm-2 col-form-label">SKU</label>
+        <label for="sku" id="sku" class="col-sm-2 col-form-label">SKU</label>
         <div class="col-sm-6">
           <input class="form-control" type="text" name="sku" value="<?php echo $sku;?>" required>
         </div>
         <span class="error"><?php echo $skuErr;?></span>
       </div>
       <div class="form-group row">
-        <label for="name" class="col-sm-2 col-form-label">NAME</label>
+        <label for="name" id="name" class="col-sm-2 col-form-label">NAME</label>
         <div class="col-sm-6">
           <input class="form-control" type="text" name="name" value="<?php echo $name;?>" required>
         </div>
         <span class="error"><?php echo $nameErr;?></span>
       </div>
       <div class="form-group row">
-        <label for="price" class="col-sm-2 col-form-label">PRICE ($)</label>
+        <label for="price" id="price" class="col-sm-2 col-form-label">PRICE ($)</label>
         <div class="col-sm-6">
           <input class="form-control" type="number" min="0.01" max="10000.00" step="0.01" name="price" value="<?php echo $price;?>" required>
         </div>
